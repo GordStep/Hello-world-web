@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css" />
+        <title>Hello world!</title>
+    </head>
+
+    <script src="/scripts/audio_script.js"></script>
+
+    <body>
+        <header>
+            <h1 class="title" id="hello_world" onclick="playAudio('/audio/song.mp3')">
+                <tr >
+                    Hello world!
+                </tr>
+            </h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <figure class="centered">
+                    <img src="/img/planet.png" 
+                        id="hello_image" 
+                        onclick="playAudio('/audio/song.mp3')"
+                        alt="Планета" 
+                        class="rotate" 
+                        width=30% 
+                        height=auto
+                        title="Новогодняя планета">
+                </figure>
+            </div>
+            
+            <p id="demo"></p>
+
+
+        </main>
+
+        <footer>
+            <ul>
+                <li><a class="github" href="https://github.com/GordStep">Мой GitHub</a> <br></li>
+                <li><a class="university" href="https://rf.unn.ru/">Мой факультет</a> <br></li>
+                <li><a class="google" href="https://google.com">Google</a> <br></li>
+            </ul>
+        </footer>
+    </body>
+</html>

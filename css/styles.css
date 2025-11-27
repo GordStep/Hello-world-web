@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(255, 252, 242);
+}
+
+h1.title {
+    text-align: center;
+    text-decoration-line: underline;
+    color: burlywood;
+}
+
+footer {
+    margin-top: 30px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin-top: 5px;
+}
+
+a.github:hover {
+    color: whitesmoke;
+    background-color: cadetblue;
+}
+a.github {
+    color: cadetblue;
+}
+
+a.google {
+    color: brown;
+}
+a.google:hover {
+    color: whitesmoke;
+    background-color: brown;
+}
+a.university {
+    color: #4682B4;
+}
+a.university:hover {
+    color: whitesmoke;
+    background-color: #4682B4;
+}
+
+#hello_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-filter: drop-shadow(5px 5px 5px #4682B4);
+    filter: drop-shadow(5px 5px 5px #4682B4);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate {
+    animation: rotation 18s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+footer {
+    text-align: center;
+}
