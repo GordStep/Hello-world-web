@@ -2,15 +2,17 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./scripts/audio_script.js"></script>
+
         <title>Hello world!</title>
     </head>
 
-    <script src="scripts/audio_script.js"></script>
+    
 
     <body>
         <header>
-            <h1 class="title" id="hello_world" onclick="playAudio('audio/song.mp3')">
+            <h1 class="title" id="hello_world" onclick="playAudio('./audio/song.mp3')">
                 <tr >
                     Hello world!
                 </tr>
@@ -20,9 +22,9 @@
         <main>
             <div class="container">
                 <figure class="centered">
-                    <img src="img/planet.png" 
+                    <img src="./img/planet.png" 
                         id="hello_image" 
-                        onclick="playAudio('audio/song.mp3')"
+                        onclick="playAudio('./audio/song.mp3')"
                         alt="Планета" 
                         class="rotate" 
                         width=30% 
