@@ -8,14 +8,13 @@ body {
 
 div.titleDiv {
     height: 50px;
+    width: 100%;
     position: relative;
 }
 
 h1.title {
-    position: absolute;
-    top: 10%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
+    width: auto;
+    text-align: center;
     text-decoration-line: underline;
     color: burlywood;
 }
@@ -99,15 +98,15 @@ a.university:hover {
     animation: rotation 20s infinite linear;
 }
 
-@media (max-width:900px) {
+@media (max-width:1100px) {
     #hello_image {
-        width: 70%;
+        width: 40%;
     }
 }
 
-@media (min-width:900px) {
+@media (min-width:1100px) {
     #hello_image {
-        width: 40%;
+        width: 30%;
     }
 }
 
