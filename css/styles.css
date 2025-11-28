@@ -2,19 +2,43 @@ body {
     background-color: rgb(255, 252, 242);
 }
 
+.text_left {
+    text-align: "left";
+}
+
+div.titleDiv {
+    height: 50px;
+    position: relative;
+}
+
 h1.title {
-    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     text-decoration-line: underline;
     color: burlywood;
+}
+
+h2.description {
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 footer {
     margin-top: 30px;
 }
+
 footer ul {
     list-style: none;
     padding: 0;
 }
+
 footer ul li {
     margin-top: 5px;
 }
@@ -23,23 +47,37 @@ a.github:hover {
     color: whitesmoke;
     background-color: cadetblue;
 }
+
 a.github {
     color: cadetblue;
 }
 
-a.google {
+a.code {
     color: brown;
 }
-a.google:hover {
+
+a.code:hover {
     color: whitesmoke;
     background-color: brown;
 }
+
 a.university {
     color: #4682B4;
 }
+
 a.university:hover {
     color: whitesmoke;
     background-color: #4682B4;
+}
+
+.logo {
+    width: 7%;
+    height: 7%;
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 64px;
+    min-height: 64px;
+    border-radius: 50%;
 }
 
 #hello_image {
@@ -58,7 +96,19 @@ a.university:hover {
 }
 
 .rotate {
-    animation: rotation 18s infinite linear;
+    animation: rotation 20s infinite linear;
+}
+
+@media (max-width:900px) {
+    #hello_image {
+        width: 70%;
+    }
+}
+
+@media (min-width:900px) {
+    #hello_image {
+        width: 40%;
+    }
 }
 
 @keyframes rotation {

@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css" />
-        <script src="./scripts/audio_script.js"></script>
 
-        <title>Hello world!</title>
-    </head>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./scripts/audio_script.js"></script>
+    <link rel="icon" href="./img/frieren.ico" type="image/x-icon">
 
-    
+    <figure>
+        <img src="./img/logo.png" class="logo" width="64px" height="64px" alt="Лого" title="Аватар">
+    </figure>
+</header>
 
-    <body>
-        <header>
-            <h1 class="title" id="hello_world" onclick="playAudio('./audio/song.mp3')">
-                <tr >
-                    Hello world!
-                </tr>
-            </h1>
-        </header>
+<head>
+    <title>Hello world!</title>
+</head>
 
-        <main>
-            <div class="container">
-                <figure class="centered">
-                    <img src="./img/planet.png" 
-                        id="hello_image" 
-                        onclick="playAudio('./audio/song.mp3')"
-                        alt="Планета" 
-                        class="rotate" 
-                        width=30% 
-                        height=auto
-                        title="Новогодняя планета">
-                </figure>
-            </div>
-            
-            <p id="demo"></p>
+<body>
+
+    <div class="titleDiv">
+        <h1 class="title" id="hello_world" onclick="playAudio('./audio/song.mp3')">
+            <tr>
+                Hello world!
+            </tr>
+        </h1>
+    </div>
 
 
-        </main>
+    <main>
+        <h2 class="description">Нажми на планету, для новогоднего настроения!</h2>
 
-        <footer>
-            <ul>
-                <li><a class="github" href="https://github.com/GordStep">Мой GitHub</a> <br></li>
-                <li><a class="university" href="https://rf.unn.ru/">Мой факультет</a> <br></li>
-                <li><a class="google" href="https://google.com">Google</a> <br></li>
-            </ul>
-        </footer>
-    </body>
+        <div class="container">
+            <figure class="centered">
+                <img src="./img/planet.png" id="hello_image" onclick="playAudio('./audio/song.mp3')" alt="Планета"
+                    class="rotate" height=auto title="Новогодняя планета">
+            </figure>
+        </div>
+
+        <p id="demo"></p>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a class="github" href="https://github.com/GordStep">Мой GitHub</a> <br></li>
+            <li><a class="university" href="https://rf.unn.ru/">Мой факультет</a> <br></li>
+            <li><a class="code" href="https://github.com/GordStep/Hello-world-web">Код сайта</a> <br></li>
+        </ul>
+    </footer>
+</body>
+
 </html>
